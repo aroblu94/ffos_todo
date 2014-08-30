@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, user-scalable=no" />
@@ -19,7 +19,7 @@
     <button disabled></button>
     <h1>ToDo</h1>
   </header>
-  <section data-type="list">
+  <section data-type="list" class="content scrollable">
     <ul data-type="edit">
       <li v-repeat="todos">
         <label class="pack-checkbox danger">
@@ -31,6 +31,12 @@
         </a>
       </li>
     </ul>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
   </section>
 </section>
 <script src="/js/vue.min.js"></script>
